@@ -1,0 +1,568 @@
+   	<body class="dashboard warning-theme danger-complement primary-logo-demo using-loader">
+    <!-- start of navbar -->
+    <%= render 'layouts/navigation' %>
+    <!-- end of navbar -->
+    
+    <!-- start of sidebar -->
+    <%= render 'layouts/sidebar' %>
+    <!-- end of sidebar -->
+
+    <!-- start of main container -->
+    <div id="dashboard-alt" class="main container-fluid dashboard-alt">
+        <!-- start of content header-->
+        <div class="content-header">
+            <h1>Dashboard</h1>
+            <p>Welcome back <a href="#">Amara Nisa</a> - Last log in on 21 May 2016</p>
+            <hr />
+        </div>
+        <!-- end of content header -->
+        <!-- start of row card-->
+        <div class="row">
+            <div class="col-md-12 col-xl-6">
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 col-xl-6">
+                        <div class="card statistic-card reverse card-info">
+                            <div class="card-block">
+                                <div class="stats-counter">
+                                    <h2 class="count-number">214</h2>
+                                    <p>New User</p>
+                                </div>
+                                <i class="material-icons">people</i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-6">
+                        <div class="card statistic-card reverse card-warning">
+                            <div class="card-block">
+                                <div class="stats-counter">
+                                    <h2 class="count-number">368</h2>
+                                    <p>New Feedback</p>
+                                </div>
+                                <i class="material-icons">feedback</i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-6">
+                        <div class="card statistic-card reverse card-light-green">
+                            <div class="card-block">
+                                <div class="stats-counter">
+                                    <h2 class="count-number">300$</h2>
+                                    <p>Profit</p>
+                                </div>
+                                <i class="fa fa-gift" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-6">
+                        <div class="card statistic-card reverse card-success">
+                            <div class="card-block">
+                                <div class="stats-counter">
+                                    <h2 class="count-number">50%</h2>
+                                    <p>Traffic</p>
+                                </div>
+                                <i class="fa fa-road" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-6">
+                        <div class="card statistic-card reverse card-danger">
+                            <div class="card-block">
+                                <div class="stats-counter">
+                                    <h2 class="count-number">445</h2>
+                                    <p>New Order</p>
+                                </div>
+                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-6">
+                        <div class="card statistic-card reverse card-purple">
+                            <div class="card-block">
+                                <div class="stats-counter">
+                                    <h2 class="count-number">2435</h2>
+                                    <p>Sales</p>
+                                </div>
+                                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-12 col-xl-6">
+                <div class="row">
+                    <div class="col-md-6 col-xl-6">
+                        <div class="card reminder">
+                            <div class="card-header no-border-bottom">
+                                <h4 class="card-title">Reminder</h4>
+                                <div class="bookmark-icon"></div>
+                            </div>
+                            <div class="card-block">
+                                <p>
+                                    Pick the day. Enjoy it - to the hilt. The day as it comes. People as they come... The past, I think, has helped me appreciate
+                                    the present, and I don't want to spoil any of it by fretting about the future.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-6">
+                        <div class="card tasks-card">
+                            <div class="card-header">
+                                <h4 class="d-inline">Tasks</h4>
+                                <div class="dropdown float-xs-right">
+                                    <a class="nav-link use-icon  text-primary" id="task-action" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="material-icons">settings</i></a>
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="task-action">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-block">
+                                <ul class="list-unstyled mb-0 v-scroll">
+                                    <li class="mb-2">
+                                        <div class="media">
+                                            <label class="custom-control custom-checkbox media-left">
+                                                <input type="checkbox" checked="checked" class="custom-control-input">
+                                                <span class="custom-control-indicator"></span>
+                                            </label>
+                                            <div class="media-body">
+                                                <h5>Schedule Meeting</h5> Opportunity for new customers
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="mb-2">
+                                        <div class="media">
+                                            <label class="custom-control custom-checkbox media-left">
+                                                <input type="checkbox" checked="checked" class="custom-control-input">
+                                                <span class="custom-control-indicator"></span>
+                                            </label>
+                                            <div class="media-body">
+                                                <h5>Upload files to servers</h5> Files must be shared to all board members
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="mb-2">
+                                        <div class="media">
+                                            <label class="custom-control custom-checkbox media-left">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <span class="custom-control-indicator"></span>
+                                            </label>
+                                            <div class="media-body">
+                                                <h5>Monthly sales report</h5> As soon as possible
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="mb-2">
+                                        <div class="media">
+                                            <label class="custom-control custom-checkbox media-left">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <span class="custom-control-indicator"></span>
+                                            </label>
+                                            <div class="media-body">
+                                                <h5>Career applicants</h5> Review and forward career aplications
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="media">
+                                            <label class="custom-control custom-checkbox media-left">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <span class="custom-control-indicator"></span>
+                                            </label>
+                                            <div class="media-body">
+                                                <h5>Quarter 3 Reports</h5> Send Q3 Reports to CEO
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of card -->
+        <!-- start of row chart-->
+        <div class="row chart">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header no-border-bottom card-header-descriptive">
+                        <div class="row">
+                            <div class="col-md-10">
+                                <div class="title float-xs-left">
+                                    <h4 class="card-title">Revenue</h4>
+                                    <p class="card-subtitle">Monthly stats</p>
+                                </div>
+                                <div class="dropdown float-xs-right">
+                                    <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">Filter Range</button>
+                                    <div class="dropdown-menu-right dropdown-menu" aria-labelledby="dropdownMenu2">
+                                        <button class="dropdown-item" type="button">Action</button>
+                                        <button class="dropdown-item" type="button">Another action</button>
+                                        <button class="dropdown-item" type="button">Something else here</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="card-block">
+                        <div class="row">
+                            <div class="col-md-10 chart-container">
+                                <div class="ct-chart"></div>
+                            </div>
+                            <div class="col-md-2">
+                                <dl>
+                                    <dt>Revenue</dt>
+                                    <dd>
+                                        $12,450
+                                    </dd>
+                                    <dt>Tax</dt>
+                                    <dd>
+                                        $2,122
+                                    </dd>
+                                    <dt>Shipment</dt>
+                                    <dd>
+                                        $1,233
+                                    </dd>
+                                    <dt>Order</dt>
+                                    <dd>
+                                        $2,422
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of row chart -->
+        <!-- start of row task, comment, chat-->
+        <div class="row">
+            <!-- start of card task -->
+            <div class="col-md-6 col-xl-4">
+                <div class="card profile-card px-0">
+                    <div class="card-profile-header" style="">
+</div>
+<div class="card-block">
+    <img class="profile-picture" src="img/avatar.jpg" alt="Emily Burnt" width="100" height="100" />
+    <h4>
+        <a href="profile/index.html">Emily Burnt</a>
+    </h4>
+    <p>Aenean lacinia bibendum nulla sed consectetur. Vestibulum id ligula porta felis euismod semper. Morbi leo risus, porta
+        ac consectetur ac, vestibulum at eros. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id
+        ligula porta felis euismod semper. Cum sociis natoque penatibus et magnis dis parturient ...</p>
+</div>
+<div class="card-footer text-xs-center">
+    <ul class="list-inline my-0">
+        <li class="list-inline-item">
+            <a href="#userModal" class="aku" data-toggle="modal">
+                                    Friends
+                                    <h5 class="ali">12M</h5>
+                                </a>
+        </li>
+
+        <li class="list-inline-item">
+            <a href="#userModal" class="aku" data-toggle="modal">
+                                    Enemies
+                                    <h5 class="ali">1</h5>
+                                </a>
+        </li>
+    </ul>
+</div>
+</div>
+</div>
+<!-- end of card task -->
+<!-- start of card chat -->
+<div class="col-md-6 col-xl-4">
+    <div class="card chats-card">
+        <div class="card-header">
+            <h4>Chats</h4>
+            <span class="tag tag-pill tag-info">2</span>
+        </div>
+        <div class="card-block">
+            <ul class="media-list v-scroll mb-0">
+                <li class="media left-message mb-2">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object rounded-circle" src="img/amara-avatar.jpg" alt="user2" height="42" width="42">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h5>Amara Nisa</h5>
+                        <small class="text-muted">1 day ago</small>
+                    </div>
+                    <div class="text-xs-right chat-bubble">
+                        Hi Paolo, could you please arrange me a meeting with technical team. There are some feedbacks from our clients and I want
+                        it to be done in few weeks. This is really important feedback from important users.
+                    </div>
+                </li>
+                <li class="media right-message">
+                    <div class="media-body text-xs-right">
+                        <h5>Paolo Aurelio</h5>
+                        <small class="text-muted">1 day ago</small>
+                    </div>
+                    <div class="media-right">
+                        <a href="#">
+                            <img class="media-object rounded-circle" src="img/paolo-avatar.jpg" alt="user2" height="42" width="42">
+                        </a>
+                    </div>
+                    <div class="text-xs-left chat-bubble">
+                        Hi Amara, sure why not. I will arrange a meeting between you and technical team as soon as possible. I will send an invitation
+                        by email and I will let you know the place and the time. The meeting will be held at your office.
+                        The technical director also will be attending the meeting.
+                    </div>
+                </li>
+            </ul>
+            <hr class="mt-2 mb-2" />
+            <form name="chat" method="post">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="type your message here">
+                    <span class="input-group-btn"><button class="btn btn-info"><i class="fa fa-paper-plane" aria-hidden="true"></i></button></span>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- end of card chat -->
+<!-- start of card comment -->
+<div class="col-md-12 col-xl-4">
+    <div class="card comments-card">
+        <div class="card-header">
+            <h4>Comments</h4>
+            <span class="tag tag-pill tag-danger">3</span>
+        </div>
+        <div class="card-block">
+            <ul class="list-unstyled mb-0 v-scroll">
+                <li class="mb-2">
+                    <div class="media">
+                        <a class="media-left" href="#">
+                            <img src="img/amara-avatar.jpg" alt="user2" class="rounded-circle" width="36" height="36">
+                        </a>
+                        <div class="media-body">
+                            <div class="float-xs-left">
+                                <h5>Amara</h5>
+                                <small class="text-muted">5 days ago</small>
+                            </div>
+                            <ul class="list-inline float-xs-right">
+                                <li class="list-inline-item"><a href="#" class="text-muted"><i class="icon ion-heart"></i></a>
+                                </li>
+                                <li class="list-inline-item"><a href="#" class="text-muted"><i class="icon-quill"></i></a>
+                                </li>
+                            </ul>
+                            <div class="clearfix"></div>
+                            <p class="mt-1 mb-0">
+                                I have met some of candidate applicants yesterday. I want someone from HRD start to interview them as soon as possible and
+                                give me the report to my email.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="mb-2">
+                    <div class="media">
+                        <a class="media-left" href="#">
+                            <img src="img/simon-avatar.jpg" alt="user2" class="rounded-circle" width="36" height="36">
+                        </a>
+                        <div class="media-body">
+                            <div class="float-xs-left">
+                                <h5>Simon</h5>
+                                <small class="text-muted">4 days ago</small>
+                            </div>
+                            <ul class="list-inline float-xs-right">
+                                <li class="list-inline-item"><a href="#" class="text-muted"><i class="icon ion-heart"></i></a>
+                                </li>
+                                <li class="list-inline-item"><a href="#" class="text-muted"><i class="icon-quill"></i></a>
+                                </li>
+                            </ul>
+                            <div class="clearfix"></div>
+                            <p class="mt-1 mb-0">
+                                I just want to inform you that I have interviewed all candidates yesterday, the result is pretty good. It's gonna be difficult
+                                to decide which candidates to take.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="mb-2">
+                    <div class="media">
+                        <a class="media-left" href="#">
+                            <img src="img/nadya-avatar.jpg" alt="user2" class="rounded-circle" width="36" height="36">
+                        </a>
+                        <div class="media-body">
+                            <ul class="list-inline float-xs-right">
+                                <li class="list-inline-item"><a href="#" class="text-muted"><i class="icon ion-heart"></i></a>
+                                </li>
+                                <li class="list-inline-item"><a href="#" class="text-muted"><i class="icon-quill"></i></a>
+                                </li>
+                            </ul>
+                            <div class="float-xs-left">
+                                <h5>Nadya</h5>
+                                <small class="text-muted">3 days ago</small>
+                            </div>
+                            <div class="clearfix"></div>
+                            <p class="mt-1 mb-0">
+                                Great, to have a lot of good options is the problem I dont mind to have. Thank you for your hard work Simon.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="mb-0">
+                    <div class="media">
+                        <a class="media-left" href="#">
+                            <img src="img/simon-avatar.jpg" alt="user2" class="rounded-circle" width="36" height="36">
+                        </a>
+                        <div class="media-body">
+                            <div class="float-xs-left">
+                                <h5>Simon</h5>
+                                <small class="text-muted">4 days ago</small>
+                            </div>
+                            <ul class="list-inline float-xs-right">
+                                <li class="list-inline-item"><a href="#" class="text-muted"><i class="icon ion-heart"></i></a>
+                                </li>
+                                <li class="list-inline-item"><a href="#" class="text-muted"><i class="icon-quill"></i></a>
+                                </li>
+                            </ul>
+                            <div class="clearfix"></div>
+                            <p class="mt-1 mb-0">
+                                You are welcome Nadya, it's my pleasure to help you.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+
+
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- end of card comment -->
+
+<!-- start of row table -->
+<div class="col-xs-12">
+    <div class="card applicants order">
+        <div class="card-header no-border-bottom card-header-descriptive">
+            <h4 class="card-title">Order Review</h4>
+            <p class="card-subtitle">Latest order</p>
+        </div>
+        <div class="card-block">
+            <div>
+                <div class="table-responsive">
+                    <table class="table vcenter table-hover">
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th class="text-xs-center">Product</th>
+                                <th>Product Name</th>
+                                <th class="text-xs-right">Price</th>
+                                <th>Status</th>
+                                <th>Date</th>
+                                <th class="text-xs-right">Purchase</th>
+                                <th class="text-xs-center">Trend</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td class="text-xs-center"><img src="img/iphone.jpg" alt="user1" width="40" height="40" class="rounded-circle">
+                                </td>
+                                <td><span>Iphone SE</span>
+                                </td>
+                                <td class="text-xs-right"><span>$ 1500</span>
+                                </td>
+                                <td class="text-danger"><span>Shipped</span>
+                                </td>
+                                <td><span>2016/05/05</span>
+                                </td>
+                                <td class="text-xs-right">1</td>
+                                <td class="text-xs-center text-muted"><i class="fa fa-arrow-up" aria-hidden="true"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td class="text-xs-center"><img src="img/samsung.jpg" alt="user2" width="40" height="40" class="rounded-circle">
+                                </td>
+                                <td><span>Samsung S7 Edger</span>
+                                </td>
+                                <td class="text-xs-right"><span>$2100</span>
+                                </td>
+                                <td class="text-purple"><span>Processing</span>
+                                </td>
+                                <td><span>2016/05/05</span>
+                                </td>
+                                <td class="text-xs-right">4</td>
+                                <td class="text-xs-center text-muted"><i class="fa fa-arrow-down" aria-hidden="true"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td class="text-xs-center"><img src="img/macbook.jpg" alt="user3" width="40" height="40" class="rounded-circle">
+                                </td>
+                                <td><span>Macbook Pro</span>
+                                </td>
+                                <td class="text-xs-right"><span>$ 2300</span>
+                                </td>
+                                <td class="text-warning"><span>Pending</span>
+                                </td>
+                                <td><span>2016/05/05</span>
+                                </td>
+                                <td class="text-xs-right">2</td>
+                                <td class="text-xs-center text-muted"><i class="fa fa-arrow-up" aria-hidden="true"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td class="text-xs-center"><img src="img/ipad.jpg" alt="user4" width="40" height="40" class="rounded-circle">
+                                </td>
+                                <td><span>iPad Air</span>
+                                </td>
+                                <td class="text-xs-right"><span>$ 410</span>
+                                </td>
+                                <td class="text-success"><span>Delivered</span>
+                                </td>
+                                <td><span>2016/05/05</span>
+                                </td>
+                                <td class="text-xs-right">39</td>
+                                <td class="text-xs-center text-muted"><i class="fa fa-arrow-down" aria-hidden="true"></i>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <nav class="text-xs-center">
+                <ul class="pagination pagination-sm pagination-control mb-0 mt-0">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="javascript:;" aria-label="Previous">
+                            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                    </li>
+                    <li class="page-item active">
+                        <a class="page-link" href="#">1 <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">2</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">3</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">4</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">5</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+<!-- end of row table -->
+</div>
+<!-- end of row task, comment, chat-->
+</div>
+<!-- end of main container -->
+<%= render 'layouts/configuration' %>
+</body>

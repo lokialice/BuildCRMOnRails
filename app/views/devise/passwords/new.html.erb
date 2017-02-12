@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" class="full-screen">
+
+
+<!-- Mirrored from fazar.bitbucket.io/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 06 Feb 2017 09:54:29 GMT -->
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>N-Arkalite - Forgot your Password</title>
+
+</head>
+
+<body class="registration warning-theme danger-complement primary-logo-demo">   
+    <!--Start of Card Center-->
+    <div class="wrapper-card">
+        <div class="card centered-signup-card signup-lg">
+            <div class="card-header text-xs-center">
+                <a href="index-2.html"><%= image_tag "info-logo.png", alt:'n-cms' %></a>
+            </div>
+            <div class="card-block">
+                <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+                    <fieldset>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <%= f.email_field :email, autofocus: true, class:'form-control', placeholder:'Email',required:'true' %>
+                        </div>
+                    </fieldset>
+                    <div class="button-action text-xs-right">
+                        <%= f.submit "Send me reset password instructions", class:'btn btn-info btn-block' %>
+                    </div>
+                    	Have an account already? <%= link_to 'Log In', new_user_session_path, class:'text-info' %>
+                <% end %>
+            </div>
+        </div>
+    </div>
+    <!--End of Card Center-->
+    <div class="backdrop"></div>
+    <footer class="footer">
+        <p>Crafted &amp; Designed by Arkalite</p>
+        <p>© 2016. All RIGHT RESERVED.</p>
+        <div class="social">
+            <ul class="social-media list-inline">
+                <li class="list-inline-item"><a href="#" class="text-info"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="text-info"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="text-info"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+
+<!-- Mirrored from fazar.bitbucket.io/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 06 Feb 2017 09:54:29 GMT -->
+</html>

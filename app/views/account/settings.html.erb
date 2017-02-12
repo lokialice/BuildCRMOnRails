@@ -1,0 +1,75 @@
+<body class="dashboard warning-theme danger-complement primary-logo-demo using-loader">
+    <!-- start of navbar -->
+    <%= render 'layouts/navigation' %>
+    <!-- end of navbar -->
+
+    <!-- start of sidebar -->
+   <%= render 'layouts/sidebar' %>
+    <!-- end of sidebar -->
+
+    <!--Start of Main Container-->
+    <div class="main container-fluid">
+        <!--Start of Content Header-->
+        <section class="content-header">
+            <h1>General</h1>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Account</a></li>
+                <li class="breadcrumb-item active">Settings</li>
+            </ol>
+            <hr/>
+        </section>
+        <!--End of Content Header-->
+        <!--Start of Main Content-->
+        <section class="content">
+            <!--Start of 1st row-->
+            <div class="row">
+                <div class="col-md-12">
+                    <!--Start of Vertical Form-->
+                    <%= form_for current_user, as: :userprofile, url: account_update_path , html: { multipart: true} do |f| %>
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Settings</h4>
+                        </div>
+                        <div class="card-block">
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                     <%= f.text_field :name, class:'form-control', placeholder:'Type Your Name' %>
+                                </div>
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                     <%= f.text_field :email, class:'form-control', placeholder:'Type Your Name' %>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastEducation">Password</label>
+                                   <%= f.password_field :password, autocomplete: "off", placeholder:'Type Your Password',required:'true', class:'form-control' %>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="uploadCV">Upload Avatar</label>
+                                    <label class="custom-file custom-control">
+                                    <%= f.file_field :avatar, class:'custom-file-input', id:'uploadCV' %>
+									<span class="custom-file-control"></span>
+								</label>
+                                </div>
+                        </div>
+                        <div class="button-action form-group text-md-right">
+                            <button type="button" class="btn btn-default">Cancel</button>
+                            <%= f.submit 'Submit', class:'btn btn-info' %>
+                        </div>
+                    </div>
+                    <% end %>
+                    <!--End of Vertical Form-->
+
+                </div>
+                <!--end-col-md-6-->
+                <!--start-col-md-6-->
+            </div>
+            <!--End of 1st row-->
+        </section>
+        <!--End of Main Contenr-->
+    </div>
+
+    <!--End of Main Container-->
+    <%= render 'layouts/configuration' %>
+</body>
